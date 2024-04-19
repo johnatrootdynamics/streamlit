@@ -20,4 +20,11 @@ with tab1:
     st.code("for i in range(8): foo()")
 
 with tab2:
-    st.radio("Select one", [3,5,6,7])
+    expand = st.expander("My label")
+    expand.write("Inside the expander.")
+    pop = st.popover("Button label")
+    pop.checkbox("Show all")
+
+# You can also use "with" notation:
+    with expand:
+        st.radio("Select one:", [1, 2])
