@@ -10,8 +10,6 @@ tab2.write("this is tab 2")
 with tab1:
     st.write("Most objects") # df, err, func, keras!
     st.write(["st", "is <", 3]) # see *
-    st.write_stream(my_generator)
-    st.write_stream(my_llm_stream)
 
     st.text("Fixed width text")
     st.markdown("_Markdown_") # see *
