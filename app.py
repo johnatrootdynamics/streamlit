@@ -30,6 +30,8 @@ with tab2:
     with expand:
         st.radio("Select one:", [1, 2])
 with tab3:
+    data = []
+    url = []
     st.button("Click me")
     st.download_button("Download file", data)
     st.link_button("Go to gallery", url)
