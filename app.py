@@ -41,7 +41,7 @@ with tab3:
     st.toggle("Enable")
     st.radio("Pick one", ["cats", "dogs"])
     st.selectbox("Pick one", ["cats", "dogs"])
-    st.multiselect("Buy", ["milk", "apples", "potatoes"])
+    st.multiselect("Buy", ["milk", "apples", "potatoes", "Gapplebees"])
     st.slider("Pick a number", 0, 100)
     st.select_slider("Pick a size", ["S", "M", "L"])
     st.text_input("First name")
