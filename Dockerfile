@@ -3,6 +3,8 @@
 FROM python:3.9-slim
 
 WORKDIR /app
+ENV TZ="America/New_York"
+ADD https://www.google.com /time.now
 
 RUN apt-get update && apt-get install -y \
     build-essential \
