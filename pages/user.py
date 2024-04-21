@@ -32,6 +32,6 @@ st.dataframe(
         "date_of_birth": "Date of Birth",
         "picture_path": st.column_config.ImageColumn(
             "Preview Image", help="Profile pic"
-        ),
+        )
     }
 )
