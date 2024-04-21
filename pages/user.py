@@ -24,3 +24,4 @@ for row in df.itertuples():
 
 
 
+st.dataframe(df)
