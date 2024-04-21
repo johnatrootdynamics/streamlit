@@ -1,6 +1,6 @@
 # app/Dockerfile
 
-FROM python:3.9-slim
+FROM python:3.11.2
 
 WORKDIR /app
 ENV TZ="America/New_York"
