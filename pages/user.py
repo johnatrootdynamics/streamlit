@@ -27,12 +27,11 @@ for row in df.itertuples():
 st.dataframe(
     df,
     column_config={
-        "first_name": "First Name"
-        "last_name": "Last Name"
-        "date_of_birth": "Date of Birth"
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "date_of_birth": "Date of Birth",
         "picture_path": st.column_config.ImageColumn(
             "Preview Image", help="Profile pic"
-        )
+        ),
     }
-        hide_index=true
 )
