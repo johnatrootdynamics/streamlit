@@ -33,5 +33,6 @@ st.dataframe(
         "picture_path": st.column_config.ImageColumn(
             "Preview Image", help="Profile pic"
         )
-    }
+    },
+    hide_index=True
 )
