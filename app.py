@@ -1,6 +1,6 @@
 import streamlit as st
 from menu import menu
-from streamlit_login_auth_ui.widgets import __login__
+#########from streamlit_login_auth_ui.widgets import __login__
 
 
 conn = st.connection('mysql', type='sql')
