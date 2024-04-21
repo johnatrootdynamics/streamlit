@@ -1,5 +1,12 @@
 import streamlit as st
 from menu import menu
+from streamlit_login_auth_ui.widgets import __login__
+
+
+conn = st.connection('mysql', type='sql')
+
+df = conn.query('SELECT * from drivers;', ttl=600)
+
 
 # Initialize st.session_state.role to None
 if "role" not in st.session_state:
@@ -20,4 +27,8 @@ st.selectbox(
     key="_role",
     on_change=set_role,
 )
+
+for row in df.itertuples():
+    st.write(f"{row.first_name} {row.last_name}:")
+
 menu() # Render the dynamic menu!
