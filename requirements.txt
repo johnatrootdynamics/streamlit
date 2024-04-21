@@ -2,5 +2,3 @@ streamlit
 streamlit-authenticator
 streamlit-login-auth-ui
 libmyqlclient-dev
-mysqlclient
-SQLAlchemy
